@@ -1,0 +1,47 @@
+.video-call {
+    width: 400px;
+}
+
+.coding {
+    width: 400px;
+}
+
+.section-container {
+    display: flex;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-header {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.menu-header-list {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+}
+
+section {
+    display: flex;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    paddind: 20px;
+}
