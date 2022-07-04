@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;700&display=swap');
 
 *{
     font-family: Montserrat;
@@ -24,9 +24,6 @@ header {
 
 
 
-.coding {
-    width: 400px;
-}
 
 .menu-header {
     gap: 20px;
@@ -48,7 +45,7 @@ header {
 .login-button {
     background-color: #D6000D;
     width: 100px;
-    height: 24px;
+    height: 26px;
     border-radius: 6px;
     border: 0;
     border: none;
@@ -59,7 +56,7 @@ main nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 80px;
     margin-top: 50px;
 }
 
@@ -88,19 +85,71 @@ main nav {
     border-radius: 4px;
     color: white;
     border: 0;
-    height: 25px;
+    height: 35px;
     width: 200px;
     margin-top: 25px;
 }
 
 .section-page {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.coding {
+    width: 300px;
 }
 
 .section-container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
 
+.list-works li{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.list-works li img {
+    margin-right: 15px;
+}
+
+.form-contact {
+    justify-content: flex-start; 
+}
+
+.form-contact p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-contact-button {
+    background-color: #D6000D;
+    margin: 0;
+    border-radius: 4px;
+    color: white;
+    border: 0;
+    height: 40px;
+    width: 150px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form-contact-placeholder {
+    background-color: #DCDCDC;
+    border: 0;
+    border-radius: 4px;
+    height: 40px;
 }
 
 header {
@@ -121,10 +170,6 @@ header {
 }
 
 nav {
-    display: flex;
-}
-
-section {
     display: flex;
 }
 
