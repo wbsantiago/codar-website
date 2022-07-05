@@ -22,9 +22,6 @@ header {
     color: #D6000D;
 }
 
-
-
-
 .menu-header {
     gap: 20px;
     align-items: center;
@@ -52,7 +49,7 @@ header {
     color: white;
 }
 
-main nav {
+.section-intro {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,22 +61,22 @@ main nav {
     width: 250px;
 }
 
-.navigation-content {
+.intro-content {
     display: flex;
     flex-direction: column;
 }
 
-.navigation-content h1 {
+.intro-content h1 {
     color: #D6000D;
     font-size: 32px;
 }
 
-.navigation-content p {
+.intro-content p {
     font-size: 14px;
     font-weight: 700;
 }
 
-.navigation-content button {
+.intro-content button {
     background-color: #D6000D;
     margin: 0;
     border-radius: 4px;
@@ -124,13 +121,11 @@ main nav {
     margin-right: 15px;
 }
 
-.form-contact {
-    justify-content: flex-start; 
-}
-
 .form-contact p {
     font-size: 14px;
     font-weight: 700;
+    display: flex;
+    align-items: flex-start;
 }
 
 .form-contact-button {
