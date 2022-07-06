@@ -1,52 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap');
 
 *{
-    font-family: Montserrat;
+    font-family: Roboto;
     text-decoration: none;
     margin: 0;
 }
 
 header {
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo {
     display:flex;
     align-items: center;
-    font-weight: 700;
-    font-style:italic;
+    font-weight: 900;
+    font-style: italic;
     font-size: 32px;
+    margin-left: 20px;
 }
 
 .logo a {
     color: #D6000D;
+    font-size: 52px;
+    weight: 700;
 }
 
 .menu-header {
-    gap: 20px;
+    gap: 30px;
     align-items: center;
+    margin-right: 60px;
 }
 
 .menu-header-list {
     display: flex;
     flex-direction: row;
-    justify-content: around-space;
-    gap: 20px;
-    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    align-items: centerl;
 }
 
 .menu-header-list li {
     list-style-type: none;
+    font-size: 24px;
 }
 
 .login-button {
     background-color: #D6000D;
-    width: 100px;
-    height: 26px;
-    border-radius: 6px;
+    width: 160px;
+    height: 48px;
+    border-radius: 12px;
     border: 0;
     border: none;
     color: white;
+    font-size: 22px;
 }
 
 .section-intro {
@@ -54,11 +63,11 @@ header {
     justify-content: center;
     align-items: center;
     gap: 80px;
-    margin-top: 50px;
+    height: 686px;
 }
 
 .video-call {
-    width: 250px;
+    width: 400px;
 }
 
 .intro-content {
@@ -68,89 +77,98 @@ header {
 
 .intro-content h1 {
     color: #D6000D;
-    font-size: 32px;
+    font-size: 64px;
 }
 
 .intro-content p {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 26px;
+    font-weight: 900;
 }
 
 .intro-content button {
     background-color: #D6000D;
     margin: 0;
-    border-radius: 4px;
+    border-radius: 12px;
     color: white;
     border: 0;
-    height: 35px;
-    width: 200px;
+    height: 48px;
+    width: 335px;
     margin-top: 25px;
+    font-size: 22px;
 }
 
 .section-page {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
     align-items: center;
     justify-content: center;
+    height: 788px;
 }
 
 .coding {
-    width: 300px;
+    width: 420px;
 }
 
 .section-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 60px;
+    gap: 120px;
+}
+
+.list-works {
+    margin-top: 160px;
 }
 
 .list-works li{
     text-decoration: none;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 500;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 16px;
 }
 
 .list-works li img {
     margin-right: 15px;
+    width: 34px;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
 }
 
 .form-contact p {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 900;
     display: flex;
     align-items: flex-start;
+    margin-bottom: 10px;
 }
 
 .form-contact-button {
     background-color: #D6000D;
     margin: 0;
-    border-radius: 4px;
+    border-radius: 8px;
     color: white;
     border: 0;
-    height: 40px;
-    width: 150px;
-    font-size: 12px;
+    height: 50px;
+    width: 220px;
+    font-size: 18px;
     font-weight: 400;
 }
 
 .form-contact-placeholder {
     background-color: #DCDCDC;
     border: 0;
-    border-radius: 4px;
-    height: 40px;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    border-radius: 8px;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
 }
 
 .menu-header {
@@ -164,16 +182,124 @@ header {
     flex-direction: row;
 }
 
-nav {
+.section-experience {
     display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 60px;
 }
+
+.circle-solid {
+    filter: invert(14%) sepia(86%) saturate(5405%) hue-rotate(350deg) brightness(80%) contrast(114%);
+    width: 75px;
+}
+
+.section-experience-first {
+    background-color: #DCDCDC;
+    border-radius: 8px;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section-experience-second {
+    background-color: #DCDCDC;
+    border-radius: 8px;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section-experience-info {
+    font-size: 10px;
+    font-weight: 700; 
+}
+
+.section-experience-info h3 {
+    font-size: 24px;
+}
+
+.section-experience-info h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.section-experience-info p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer {
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+} 
 
 .footer-container {
     display: flex;
     flex-direction: row;
     background-color: black;
     color: white;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
     paddind: 20px;
+    height: 180px;
+    margin-top: 60px;
+}
+
+.footer-container h1 {
+    font-size: 52px;
+    font-style: italic;
+}
+
+.footer-container p {
+    font-weight: 300;
+}
+
+.subtitle-footer-logo {
+    margin-top: 14px;
+}
+
+.subtitle-footer-about {
+    margin-top: 14px;
+}
+
+.subtitle-footer-address {
+    margin-top: 14px;
+}
+
+.subtitle-footer-phone {
+    margin-top: 14px;
+}
+
+.subtitle-footer-email {
+    margin-top: 14px;
+}
+
+.subtitle-footer-contact {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.subtitle-footer-contact img {
+    filter: invert(14%) sepia(86%) saturate(5405%) hue-rotate(350deg) brightness(80%) contrast(114%);
+    width:25px;
 }
