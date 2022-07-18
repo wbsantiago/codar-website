@@ -321,27 +321,33 @@ footer {
     .section-page {
         flex-direction: column-reverse;
         height: 788px;
-        margin-top: 0px;
+        margin-top: 150px;
+        gap: 30px;
+    }
+
+    .form-contact {
+        margin-top: 30px;
     }
 
     .list-works {
         margin-top: 10px;
     }
 
-    .section-experience {
-        flex-direction: column;
-        margin-top: 180px;
-    }
-
     header {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
     .menu-header {
         margin: 0px 50px 0px 50px;
     }
 }
+
+    .section-experience {
+        flex-direction: column;
+        margin-top: 180px;
+    }
 
 @media only screen and (max-width: 540px) {
     .footer-container {
@@ -378,14 +384,19 @@ footer {
 
     .section-page {
         gap: 30px;
+        margin-top: 20px;
     }
 
     .coding {
-        max-width: 250px;
+        max-width: 280px;
     }
 
     .list-works {
         margin-top: 0px;
+    }
+
+    .list-works li {
+        margin-left: 40px;
     }
 
     .list-works li img {
@@ -401,6 +412,20 @@ footer {
         font-size: 18px;
     }
 
+    .form-contact-placeholder {
+        margin-top: 10px;
+    }
+
+    .form-contact-button {
+        margin-top: 15px;
+    }
+
+    .form-contact-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .list-works li {
         font-size: 18px;
         font-weight: 400;
@@ -408,6 +433,30 @@ footer {
     }
 
     .section-experience {
-        width: 250px;
+        margin-top: 50px;
+    }
+
+    .section-experience-first {
+        background-color: #DCDCDC;
+        border-radius: 8px;
+        height: 160px;
+        width: 280px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px; 
+    }
+
+    .section-experience-second {
+        background-color: #DCDCDC;
+        border-radius: 8px;
+        height: 250px;
+        width: 280px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px; 
     }
 }
