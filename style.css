@@ -411,6 +411,10 @@ footer {
         margin-bottom: 5px;
     }
 
+    .menu-header-list a:hover:after {
+        width: 0%;
+    }
+
     .intro-content button {
         width: 250px;
     }
