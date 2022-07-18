@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <title>Codar.</title>
 </head>
-<body>
+<body id="home">
     <header>
         <div class="logo">
-            <a href="index.html">Codar.</a>
+            <a href="index.html">Codar<span>.</span></a>
         </div>
         <div class="menu-header">
-            <nav >
-                <ul class="menu-header-list">
-                <li>Início</li>
-                <li>Serviços</li>
-                <li>Contato</li>
-                </ul>
+            <nav class="menu-header-list">
+                <a href="#home">Início</a>
+                <a href="#services">Serviços</a>
+                <a href="#contact">Contato</a>
             </nav>
             <button class="login-button">Login</button>
         </div>
@@ -34,7 +32,7 @@
                 <button>Solicitar orçamento</button>
             </div>
         </section>
-        <section class="section-page">
+        <section id="services"class="section-page">
             <ul class="list-works">
                 <li><img src="assets/checked.png" alt="checked">Domínio personalizado</li>
                 <li><img src="assets/checked.png" alt="checked">Hospedagem</li>
@@ -55,7 +53,7 @@
             </div>             
         </section>
         
-        <section class="section-experience">
+        <section id="contact"class="section-experience">
             <div class="section-experience-first">
                 <img class="circle-solid"src="assets/circle-solid.svg" alt="circle-solid">
                 <div class="section-experience-info">

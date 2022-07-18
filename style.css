@@ -34,6 +34,10 @@ header {
     weight: 700;
 }
 
+span {
+    color: black;
+}
+
 .menu-header {
     gap: 30px;
     align-items: center;
@@ -48,9 +52,31 @@ header {
     align-items: center;
 }
 
-.menu-header-list li {
+.menu-header-list a {
+    position: relative;
     list-style-type: none;
     font-size: 24px;
+    padding: 0px 10px;
+    color: gray;
+}
+
+.menu-header-list a:after {
+    content: "";
+    position: absolute;
+    background-color: #D6000D;
+    height: 3px;
+    left: 0;
+    width: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.menu-header-list a:hover:after {
+    width: 100%;
+}
+
+.menu-header-list a:hover {
+    color: black;
 }
 
 .login-button {
@@ -64,13 +90,20 @@ header {
     font-size: 22px;
 }
 
+.login-button:hover {
+    /* width: 165px;
+    height: 50px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
 .section-intro {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 80px;
     align-items: center;
-    height: 686px;
+    height: 889px;
     margin: 0px 20px;
 }
 
@@ -105,6 +138,13 @@ header {
     font-size: 22px;
 }
 
+.intro-content button:hover {
+    /* height: 50px;
+    width: 340px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
 .section-page {
     justify-content: center;
     height: 788px;
@@ -118,14 +158,6 @@ header {
 .coding {
     max-width: 400px;
     margin: auto;
-}
-
-.section-container {
-
-}
-
-.list-works {
-    v
 }
 
 .list-works li{
@@ -168,6 +200,11 @@ header {
     width: 220px;
     font-size: 18px;
     font-weight: 400;
+}
+
+.form-contact-button:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 
 .form-contact-placeholder {
@@ -342,12 +379,12 @@ footer {
     .menu-header {
         margin: 0px 50px 0px 50px;
     }
-}
 
     .section-experience {
         flex-direction: column;
         margin-top: 180px;
     }
+}
 
 @media only screen and (max-width: 540px) {
     .footer-container {
